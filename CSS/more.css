@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.more-services-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+    color: black;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    width: 100%;
+}
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    width: 280px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-icon {
+    font-size: 2.5rem;
+    color: #007f5f;
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    margin: 0.8rem 0 0.5rem;
+    color: #222;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
