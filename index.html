@@ -3,25 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EMERALD PORTIFOLIO</title>
-    <!-- Custom style CSS File -->
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-    
-    <!-- Favicons -->
-    <link rel="icon" href="{{ url_for('static', filename='images/favicon.png') }}">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.g
-    njuguna njenga
-    11:16 PM
-    </head>
-    <body>
-    
-        <!-- Navbar -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-            <div class="container">
-                
-                <img src="{{ url_for('static', filename='img/hero-bg.jpg') }}" alt="Simon Njenga" class="img-fluid rounded-circle mb-1" style="width: 50px;">
-                
-                <a class="navbar-brand" href="{{ url_for('home') }}">Simon Njenga</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav
+    <title>Emerald Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="sylvester.css">
+</head>
+<body>
+    <!--Header section-->
+    <header>
+        <nav>
+            <div class="container-header">
+               <div class="logo-content">
+                 <div class="logo">
+      
+                  </div>
+                    <div class="logo-name">UI Portfolio</div>
+                </div>
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#"> <span>Blog</span><span class="arrow-pointer"><i class="fa-solid fa-chevron-down"></i></span></a></li>
+                        <li><a href="#"><span>Pages</span><span class="arrow-pointer"><i class="fa-solid fa-chevron-down"></i></span></a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><button class="submit-btn">Hire Me</button></li>
+                        <li><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></li>
+                        <li><i class="fa-regular fa-moon" style="color: #ffffff;"></i></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="sidebar-menu icons">
+      <div class="sidebar">
+        <div class="menu-item">
+        <span class="fisrt-icon">&#187;</i></i></span> <!-- Double chevron character as placeholder -->
+         <span class="text"></span>
+      </div>
+        <div class="menu-item">
+          <span class="icon" style="border-top: 1px solid white;"><i class="fa-solid fa-arrow-left"></i></span> <!-- Left arrow -->
+          <span class="text">Back</span>
+        </div>
+        <div class="menu-item">
+          <span class="icon"><i class="fa-solid fa-download"></i></span> <!-- Down arrow -->
+          <span class="text">Download</span>
+        </div>
+        <div class="menu-item">
+          <span class="icon"><i class="fa-solid fa-cart-shopping"></i></span> <!-- Shopping cart -->
+          <span class="text">Buy</span>
+        </div>
+      </div>
+    </section>
+    <section class="hero">
+        <div class="hero-content">
+          <h1>Hi, I'm <span>Emerald technologies</span></h1>
+          <h2><span class="outline">Web De</span></h2>
+          <p>I love Graphic design and Photography and have been working on my portfolio since 2016. I Can give your business a new Creative start right away!</p>
+          <div class="buttons">
+            <button class="hire-butt">Hire Me</button>
+            <button class="portfolio-btn">My Portfolio</button>
+          </div>
+        </div>
+        <div class="hero-image">
+            <img src="members.png" alt="Hero Image" class="member-img" width="500" height="960"/>
+          </div>
+      </section>
+      <section class="my-work">
+        <div><h3>My Success Work</h3></div>
+        <div class="image-grid">
+          <img src="image1.png" alt="Image 1">
+          <img src="image2.png" alt="Image 2">
+          <img src="image3.png" alt="Image 3">
+          <img src="image4.png" alt="Image 4">
+          <img src="image5.png" alt="Image 5">
+          <img src="image6.png" alt="Image 6">
+        </div>
+        <div>
+          <img src="foot.png" alt=""class="full-width-image">
+        </div>
+      </section>
+</body>
+</html>
