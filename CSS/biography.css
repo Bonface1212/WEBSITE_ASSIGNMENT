@@ -1,0 +1,306 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  body {
+    background-color: #fff;
+    color: #333;
+    padding: 40px;
+    max-width: 2000px;
+  }
+  
+  .container {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  /* Navbar */
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1rem 2rem;
+/* optional: navbar background */
+  }
+  
+nav {
+    width: 100%;
+  }
+  
+  .container-header {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  /* Logo */
+  .logo-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+  
+  .logo-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  /* Nav Links */
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+   
+  }
+  
+  .nav-links ul li a {
+    text-decoration: none;
+    color: #2ecc71;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    position: relative;
+    margin-top: 20px;
+  }
+  
+  .nav-links ul li a:hover {
+    color: #2ecc71;
+  }
+  
+  .nav-links ul li a span.arrow-pointer {
+    margin-left: 0.3rem;
+    font-size: 0.75rem;
+  }
+  
+  .nav-links ul li i {
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links ul li i:hover {
+    color: #2ecc71;
+  }
+  
+  .submit-btn {
+    padding: 0.5rem 1.2rem;
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    cursor: grab;
+  }
+  
+  .submit-btn:hover {
+    background-color: #27ae60;
+  }
+  /* Search Input Box */
+#search-container {
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  #search-input {
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    outline: none;
+    width: 200px;
+  }
+  
+  #search-input:focus {
+    border-color: #2ecc71;
+  }
+  
+  /* Make sure it’s hidden by default */
+  #search-container {
+    display: none;
+  }
+  
+  
+  .image-section img {
+    width: 350px;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .info-section {
+    flex: 1;
+  }
+  
+  .info-section h5 {
+    font-size: 14px;
+    color: gray;
+    letter-spacing: 1px;
+    margin-bottom: px;
+    margin-top: 50px;
+  }
+  
+  .info-section h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .info-section p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+  .details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: -60px 30px;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 15px;
+  }
+  
+  
+  .social {
+    margin: 20px 0;
+  }
+  
+  .social p {
+    margin-bottom: 10px;
+  }
+  
+  .social a {
+    margin-right: 15px;
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .social a:hover {
+    color: green;
+  }
+  
+  .buttons {
+    margin-top: 20px;
+  }
+  
+  .hire,
+  .download {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-right: 15px;
+  }
+  
+  .hire {
+    background-color: #004d40;
+    color: white;
+  }
+  
+  .download {
+    background-color: #00c853;
+    color: white;
+  }
+  /* Dark Theme Styles */
+.dark-theme {
+    background-color: #121212;
+    color: #f1f1f1;
+  }
+  
+  .dark-theme .nav-links ul li a,
+  .dark-theme .social a,
+  .dark-theme .fa-magnifying-glass,
+  .dark-theme .fa-moon {
+    color: #f1f1f1;
+  }
+  
+  .dark-theme .nav-links ul li a:hover,
+  .dark-theme .social a:hover {
+    color: #2ecc71;
+  }
+  
+  .dark-theme .submit-btn,
+  .dark-theme .hire {
+    background-color: #2ecc71;
+    color: #fff;
+  }
+  
+  .dark-theme .download {
+    background-color: #00c853;
+  }
+
+/* Theme Toggle Icon */
+.theme-toggle::before {
+    content: "\f185"; /* Moon icon */
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    font-size: 1.5rem;
+  }
+  
+  .dark-theme .theme-toggle::before {
+    content: "\f185"; /* Moon icon */
+  }
+  
+  .light-theme .theme-toggle::before {
+    content: "\f185"; /* Moon icon */
+  }
+  
+  .light-theme .theme-toggle {
+    content: "\f185"; /* Moon icon */
+  }
+  
+  .dark-theme .theme-toggle::before {
+    content: "\f185"; /* Moon icon */
+  }
+  
+  
+  /* Button Transitions */
+  button,
+  a.download {
+    transition: all 0.3s ease;
+  }
+  
+  button:hover,
+  a.download:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  /* CV Download Link Style */
+  a.download {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-size: 15px;
+    background-color: #00c853;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Ensure smooth toggle */
+  body {
+    transition: background-color 0.4s, color 0.4s;
+  }
+  

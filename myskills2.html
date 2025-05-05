@@ -4,125 +4,24 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Services Section</title>
-  <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-    rel="stylesheet"
-  />
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f5f7f6;
-    }
-
-    .services-section {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 1200px;
-      margin: 0 auto;
-      padding: 60px 20px 40px;
-      gap: 40px;
-    }
-
-    .services-container {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 30px 40px;
-      flex: 1;
-    }
-
-    .service-item {
-      display: flex;
-      align-items: flex-start;
-      gap: 15px;
-    }
-
-    .service-icon {
-      font-size: 24px;
-      color: #008080;
-      margin-top: 4px;
-    }
-
-    .service-content h3 {
-      margin: 0;
-      font-size: 16px;
-      font-weight: bold;
-      color: #222;
-    }
-
-    .service-content p {
-      margin: 5px 0 0;
-      font-size: 14px;
-      color: #666;
-    }
-
-    .image-placeholder {
-      flex: 0 0 320px;
-    }
-
-    .image-placeholder img {
-      width: 100%;
-      border-radius: 10px;
-    }
-
-    .stats-section {
-      display: flex;
-      justify-content: space-around;
-      max-width: 1000px;
-      margin: 0 auto;
-      padding: 40px 20px;
-      background-color: #fff;
-    }
-
-    .stat-item {
-      text-align: center;
-    }
-
-    .stat-number {
-      font-size: 32px;
-      font-weight: bold;
-      color: #333;
-    }
-
-    .stat-label {
-      font-size: 14px;
-      color: #888;
-    }
-
-    @media (max-width: 768px) {
-      .services-section {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      .image-placeholder {
-        order: -1;
-        margin-bottom: 30px;
-      }
-
-      .services-container {
-        grid-template-columns: 1fr;
-      }
-
-      .stats-section {
-        flex-wrap: wrap;
-        gap: 20px;
-      }
-
-      .stat-item {
-        width: 45%;
-      }
-    }
-
-    @media (max-width: 480px) {
-      .stat-item {
-        width: 100%;
-      }
-    }
-  </style>
+    <link rel="stylesheet" href="CSS/myskills2.css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet"/>
 </head>
 <body>
+    <div class="nav-links">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="biography.html">My Biography</a></li>
+          <li><a href="what_I_Do.html">Service</a></li>
+          <li><a href="my_skills.html"><span>My Skills</span><span class="arrow-pointer"><i class="fa-solid fa-chevron-down"></i></span></a></li>
+          <li><a href="work.html">My Success</a></li>
+          <li><a href="myskills2.html"><span>Pages</span><span class="arrow-pointer"><i class="fa-solid fa-chevron-down"></i></span></a></li>
+          <li><a href="#">Contact</a></li>
+          <li><button class="submit-btn">Hire Me</button></li>
+          <li><i class="fa-solid fa-magnifying-glass" style="color: #ffffff;"></i></li>
+          <li><i class="fa-regular fa-moon" style="color: #ffffff;"></i></li>
+        </ul>
+      </div>
   <section class="services-section">
     <div class="services-container">
       <div class="service-item">

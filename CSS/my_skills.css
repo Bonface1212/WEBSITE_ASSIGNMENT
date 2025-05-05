@@ -8,7 +8,7 @@ body {
   
   .container {
     display: flex;
-    max-width: 1200px;
+    max-width: 800px;
     margin: 50px auto;
     gap: 40px;
     padding: 20px;
@@ -18,7 +18,8 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 35px;
+    
   }
   
   .images img {
@@ -33,19 +34,22 @@ body {
   
   .content h4 {
     color: #666;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
     font-weight: normal;
+    margin-top: 20%;
   }
   
   .content h2 {
     margin: 0 0 20px;
     font-size: 28px;
+    
   }
   
   .content p {
     margin-bottom: 30px;
     line-height: 1.6;
     color: #666;
+    margin-top:55% ;
   }
   
   .skill {

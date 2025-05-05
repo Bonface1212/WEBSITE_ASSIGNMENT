@@ -1,0 +1,51 @@
+/* my work*/
+.my-work{
+    background-color: #fff;
+    overflow: hidden;
+    object-fit: cover;
+  }
+  h3{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+  }
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Desktop: 3 columns */
+    grid-template-rows: auto;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 40px auto;
+    max-width: 800px; /* control width */
+  }
+  
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
+  /* Tablet devices */
+  @media (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: repeat(2, 1fr); /* Tablet: 2 columns */
+    }
+  }
+  
+  /* Mobile devices */
+  @media (max-width: 480px) {
+    .image-grid {
+      grid-template-columns: 1fr; /* Phone: 1 column */
+    }
+  }
+  /*foot-img*/
+.full-width-image{
+    width: 100vw; /* 100% of the viewport width */
+    height: auto; /* keep natural height */
+    display: block; /* removes small gaps below image */
+    object-fit: cover; /* optional: makes sure it fills nicely if height is fixed */
+    overflow: hidden; 
+  }

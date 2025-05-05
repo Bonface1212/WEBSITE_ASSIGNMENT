@@ -61,7 +61,7 @@ body {
   .more-services-container {
     display: flex;
     justify-content: center;
-    margin-top: 1rem;
+    margin-top: 50px;
     margin-left: 19rem;
     margin-right: 19rem;
 }
